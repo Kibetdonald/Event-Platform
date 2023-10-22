@@ -1,0 +1,598 @@
+/* Width: 1440px */
+@media screen and (max-width: 1440px) {}
+
+/* width 1024*/
+@media screen and (max-width: 1280px) {
+  .section_one {
+    top: 47%;
+    left: 10%;
+    font-size: 1em;
+    line-height: 2rem;
+    width: 40%;
+    /* border-left: 4px solid #d1410c; */
+  }
+
+  .section_two {
+    width: 40%;
+    margin-top: 8%;
+  }
+}
+
+/* width 1024*/
+@media screen and (max-width: 1024px) {
+  .section_one {
+    top: 47%;
+    left: 10%;
+    font-size: 1em;
+    line-height: 2rem;
+    width: 40%;
+    /* border-left: 4px solid #d1410c; */
+  }
+
+  .section_two {
+    width: 40%;
+    margin-top: 8%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .bannerImage {
+    width: 95%;
+    margin-top: 30%;
+    margin-left: 2%;
+  }
+
+  .vl {
+    border-left: 4px solid #209CEE;
+    height: 11em;
+    position: absolute;
+    left: 10%;
+    top: 29%;
+  }
+}
+
+/* width 720*/
+@media screen and (min-width: 720px) and (max-width: 979px) {
+  .bannerImage {
+    width: 95%;
+    margin-top: 30%;
+    margin-left: 2%;
+  }
+
+  .vl {
+    border-left: 4px solid #209CEE;
+    height: 11em;
+    position: absolute;
+    left: 10%;
+    top: 29%;
+  }
+  .FirstSection {
+    width: 80%;
+    height: 80%;
+  
+}
+/* fixed elements responsive styling */
+.fixedText{
+  position: fixed;
+  margin-left: -7%;
+  margin-top: 40%!important;
+}
+.vertical {
+  border-left: 2px solid grey;
+  height: 150px;
+  margin-top: 10px;
+  margin-left: 12px;
+}
+.fixedTextRight{
+  float: right;
+  color: #000;
+  position: fixed;
+  right: 15px;
+  margin-top: -26%;
+}
+/*end of fixed elements responsive styling */
+}
+
+/* max-width 576*/
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .section_one {
+    top: 47%;
+    left: 13%;
+    font-size: 0.8em;
+    line-height: 2rem;
+    width: 42%;
+    /* border-left: 4px solid #d1410c; */
+  }
+
+  .section_two {
+    width: 40%;
+    margin-top: 12%;
+  }
+
+  .bigtext {
+    left: 13%;
+    font-size: 2.5 rem;
+    top: 40%;
+  }
+
+  .vl {
+    height: 9em;
+    left: 10%;
+    top: 48%;
+  }
+
+  .btn-signin {
+    position: absolute;
+    top: 85%;
+    left: 13%;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+  }
+  
+}
+
+/* max-width 576 and minimum of 480*/
+@media screen and (min-width: 480px) and (max-width: 600px) {
+  #goal .goal-img img {
+    width: auto;
+    height: 0 !important;
+    object-fit: cover;
+  }
+
+  .bannerImage {
+    width: 0px;
+    height: 0px;
+  }
+
+  .col-xs-0,
+  .col-sm-0,
+  .col-md-0,
+  .col-lg-0 {
+    flex: 0 0 0;
+    max-width: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .ultimate {
+    color: #008dc9;
+    font-size: 35px;
+  }
+
+  .FirstSection {
+    width: 80%;
+    height: 65vh;
+    padding-top: 30%;
+    padding-left: 10%;
+  }
+
+  .smalltext {
+    font-size: 20px;
+    color: grey;
+    margin-left: 3%;
+    width: 95%
+  }
+
+  
+  /* fixed elements responsive styling */
+ 
+  .vl {
+    height: 12em;
+    left: 18%;
+    top: 44%;
+  }
+   .fixedText{
+    position: fixed;
+    margin-left: -17%;
+    margin-top: 43%!important;
+  }
+  .FirstSection {
+    width: 80%;
+    height: 80%;
+}
+  .vertical {
+    border-left: 2px solid grey;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 12px;
+  }
+  .fixedTextRight{
+    float: right;
+    color: #000;
+    position: fixed;
+    right: 40px;
+    margin-top: -48%;
+  }
+ /*end of fixed elements responsive styling */
+
+  .bigtext {
+    color: #000;
+    font-size: 1.3rem;
+    top: 35%;
+  }
+
+  .btn-getInTouch {
+    position: absolute;
+    top: 52%;
+  }
+
+  #goal .goal-img img {
+    width: auto;
+    height: 0 !important;
+    object-fit: cover;
+  }
+
+  #goal .goal-img {
+    display: inline-block;
+    position: relative;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #goal .goal-img img {
+    width: auto;
+    height: 0 !important;
+    object-fit: cover;
+  }
+
+  .bannerImage {
+    width: 0px;
+    height: 0px;
+  }
+
+  .col-xs-0,
+  .col-sm-0,
+  .col-md-0,
+  .col-lg-0 {
+    flex: 0 0 0;
+    max-width: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .ultimate {
+    color: #008dc9;
+    font-size: 35px;
+  }
+
+  .FirstSection {
+    width: 80%;
+    height: 65vh;
+    padding-top: 30%;
+    padding-left: 10%;
+  }
+
+  .smalltext {
+    font-size: 20px;
+    color: grey;
+    margin-left: 3%;
+    width: 95%
+  }
+
+  .vl {
+    margin-top: -6em;
+  }
+
+  .bigtext {
+    color: #000;
+    font-size: 1.3rem;
+    top: 35%;
+  }
+
+  .btn-getInTouch {
+    position: absolute;
+    top: 52%;
+  }
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 479px) {
+  #goal .goal-img img {
+    width: auto;
+    height: 0 !important;
+    object-fit: cover;
+  }
+
+  .bannerImage {
+    width: 0px;
+    height: 0px;
+  }
+
+  .col-xs-0,
+  .col-sm-0,
+  .col-md-0,
+  .col-lg-0 {
+    flex: 0 0 0;
+    max-width: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .ultimate {
+    color: #008dc9;
+    font-size: 35px;
+  }
+
+  .FirstSection {
+    width: 80%;
+    height: 65vh;
+    padding-top: 30%;
+    padding-left: 10%;
+  }
+
+  .smalltext {
+    font-size: 17px;
+    color: grey;
+    margin-left: 3%;
+    width: 95%
+  }
+
+  .vl {
+    height: 10em;
+    left: 17%;
+    top: 42%;
+  }
+
+   /* fixed elements responsive styling */
+   .fixedText{
+    position: fixed;
+    margin-left: -14%;
+    margin-top: 72%!important;
+  }
+  .vertical {
+    border-left: 2px solid grey;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 12px;
+  }
+  .fixedTextRight{
+    float: right;
+    color: #000;
+    position: fixed;
+    right: 15px;
+    margin-top: -40%;
+  }
+ /*end of fixed elements responsive styling */
+
+  .bigtext {
+    color: #000;
+    font-size: 1.6rem;
+    top: 35%;
+  }
+
+  .btn-getInTouch {
+    position: absolute;
+    top: 52%;
+  }
+
+
+
+
+}
+
+/* This is what i have started working on */
+/* max-width 576 and minimum of 480*/
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .bannerImage {
+    width: 0px;
+    height: 0px;
+  }
+
+  .col-xs-0,
+  .col-sm-0,
+  .col-md-0,
+  .col-lg-0 {
+    flex: 0 0 0;
+    max-width: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .ultimate {
+    color: #008dc9;
+    font-size: 35px;
+  }
+  /* fixed elements responsive styling */
+  .fixedText{
+    position: fixed;
+    margin-left: -17%;
+    margin-top: 70%!important;
+  }
+  .vertical {
+    border-left: 2px solid grey;
+    height: 150px;
+    margin-top: 10px;
+    margin-left: 12px;
+  }
+  .fixedTextRight{
+    float: right;
+    color: #000;
+    position: fixed;
+    right: 15px;
+    margin-top: -100%;
+  }
+ /*end of fixed elements responsive styling */
+  .FirstSection {
+    width: 80%;
+    height: 65vh;
+    padding-top: 30%;
+    padding-left: 10%;
+  }
+
+  .smalltext {
+    font-size: 20px;
+    color: grey;
+    margin-left: 3%;
+    width: 95%
+  }
+
+  .vl {
+    height: 16em;
+    left: 18%;
+    top: 44%;
+  }
+
+  .bigtext {
+    color: #000;
+    font-size: 1.3rem;
+    top: 35%;
+  }
+
+  .btn-getInTouch {
+    position: absolute;
+    top: 52%;
+  }
+
+  #goal .goal-img img {
+    width: auto;
+    height: 0 !important;
+    object-fit: cover;
+  }
+
+  #goal .goal-img {
+    display: inline-block;
+    position: relative;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+/* width 320*/
+@media screen and (min-width: 240px) and (max-width: 320px) {
+  .bannerImage {
+    width: 0px;
+    height: 0px;
+  }
+
+  .col-xs-0,
+  .col-sm-0,
+  .col-md-0,
+  .col-lg-0 {
+    flex: 0 0 0;
+    max-width: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .ultimate {
+    color: #008dc9;
+    font-size: 35px;
+  }
+
+  .FirstSection {
+    width: 80%;
+    height: 65vh;
+    padding-top: 30%;
+    padding-left: 10%;
+  }
+
+  .smalltext {
+    font-size: 20px;
+    color: grey;
+    margin-left: 3%;
+    width: 95%
+  }
+
+  .vl {
+    margin-top: -6em;
+    height: 0px;
+    width: 0px
+  }
+
+  .bigtext {
+    color: #000;
+    font-size: 1.3rem;
+    top: 35%;
+  }
+
+  .btn-getInTouch {
+    position: absolute;
+    top: 52%;
+  }
+
+  #goal .goal-img img {
+    width: auto;
+    height: 0 !important;
+    object-fit: cover;
+  }
+
+  #goal .goal-img {
+    display: inline-block;
+    position: relative;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+/* width 260*/
+@media screen and (min-width: 140px) and (max-width: 239px) {
+  .bannerImage {
+    width: 0px;
+    height: 0px;
+  }
+
+  .col-xs-0,
+  .col-sm-0,
+  .col-md-0,
+  .col-lg-0 {
+    flex: 0 0 0;
+    max-width: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .ultimate {
+    color: #008dc9;
+    font-size: 35px;
+  }
+
+  .FirstSection {
+    width: 80%;
+    height: 65vh;
+    padding-top: 30%;
+    padding-left: 10%;
+  }
+
+  .smalltext {
+    font-size: 20px;
+    color: grey;
+    margin-left: 3%;
+    width: 95%
+  }
+
+  .vl {
+    margin-top: -6em;
+    height: 0px;
+  }
+
+  .bigtext {
+    color: #000;
+    font-size: 1.3rem;
+    top: 35%;
+  }
+
+  .btn-getInTouch {
+    position: absolute;
+    top: 52%;
+  }
+
+  #goal .goal-img img {
+    width: auto;
+    height: 0 !important;
+    object-fit: cover;
+  }
+
+  #goal .goal-img {
+    display: inline-block;
+    position: relative;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+  }
+}
