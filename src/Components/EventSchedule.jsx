@@ -13,28 +13,66 @@ const EventSchedule = () => {
     {
       day: "Day 1",
       events: [
-        { time: "09:00 AM", title: "Registration" },
-        { time: "10:00 AM", title: "Opening Ceremony" },
-        { time: "12:00 PM", title: "Keynote Speaker" }, 
+        {
+          time: "09:00 AM - 11:00 AM",
+          title: "Morning Session",
+        },
+        {
+          time: "11:30 AM - 01:00 PM",
+          title: "Afternoon Session",
+          subEvents: [
+            {
+              title: "Registration",
+              responsiblePerson: "John Doe",
+              profilePicture: "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
+            },
+            {
+              title: "Welcome Speech",
+              responsiblePerson: "Jane Smith",
+              profilePicture: "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg",
+            },
+          ],
+        },
+        // Other events for Day 1
       ],
     },
     {
       day: "Day 2",
       events: [
-        { time: "09:30 AM", title: "Panel Discussion" },
-        { time: "11:30 AM", title: "Breakout Sessions" },
-        { time: "02:00 PM", title: "Networking Lunch" }, 
+        {
+          time: "09:30 AM - 11:30 AM",
+          title: "Discussion Panel",
+          subEvents: [
+            {
+              title: "Panel Discussion",
+              responsiblePerson: "David Johnson",
+              profilePicture: "https://www.shutterstock.com/image-photo/young-handsome-man-beard-wearing-260nw-1914527185.jpg",
+            },
+            // Add more sub-events as needed
+          ],
+        },
+        // Other events for Day 2
       ],
     },
     {
       day: "Day 3",
       events: [
-        { time: "10:00 AM", title: "Workshops" },
-        { time: "01:00 PM", title: "Closing Ceremony" }, 
+        {
+          time: "10:00 AM - 01:00 PM",
+          title: "Workshops",
+          subEvents: [
+            {
+              title: "Workshop 1",
+              responsiblePerson: "Sara Brown",
+              profilePicture: "https://dl.memuplay.com/new_market/img/com.vicman.newprofilepic.icon.2022-06-07-21-33-07.png",
+            },
+            // Add more sub-events as needed
+          ],
+        },
+        // Other events for Day 3
       ],
     },
   ];
-
   return (
     <div className="w-full">
       <ul className="flex justify-center space-x-4 p-4">
@@ -63,8 +101,30 @@ const EventSchedule = () => {
               key={index}
               className="border border-gray-300 rounded-lg p-4 my-2 hover:shadow-md transition duration-300 ease-in-out"
             >
-              <div className="text-xl font-semibold">{event.time}</div>
-              <div>{event.title}</div>
+              <div className="text-xl font-semibold">{event.title}</div>
+              <div>{event.time}</div>
+              {event.subEvents && (
+                <div className="mt-2 flex">
+                  {event.subEvents.map((subEvent, subIndex) => (
+                    <div
+                      key={subIndex}
+                      className="border border-gray-300 rounded-lg p-4 my-2 hover:shadow-md transition duration-300 ease-in-out mx-2 flex items-center"
+                    >
+                      <div>
+                        <img
+                          src={subEvent.profilePicture}
+                          alt={subEvent.responsiblePerson}
+                          className="w-16 h-16 rounded-full mr-2"
+                        />
+                      </div>
+                      <div>
+                        <div>{subEvent.title}</div>
+                        <div>Responsible: {subEvent.responsiblePerson}</div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>

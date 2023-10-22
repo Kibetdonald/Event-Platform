@@ -29,11 +29,11 @@ const Countdown = ({ targetDate }) => {
 
   return (
     <div className="bg-blue-400 p-12 text-white flex">
-      <div className="mr-10">
-        <h2 className="text-lg font-semibold">Event Date</h2>
+      <div className="ml-20">
+        <h2 className="text-3lg font-semibold">Event Date</h2>
         <span className="text-sm">Count Every Second Until the Event</span>
       </div>
-      <div className="flex items-center justify-center w-100">
+      <div className="flex items-center justify-center w-100 ml-20">
         <div className="flex">
         <div className="w-32 h-24 p-2 border border-gray-300 rounded shadow-lg m-1 flex items-center justify-center">
             <h3 className="text-3xl">

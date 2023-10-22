@@ -11,18 +11,12 @@ export default function LandingPage() {
   const placeholderTargetDate = new Date("2023-12-05T00:00:00");
   return (
     <div>
-      {/* <div className="bg-blue-500 h-400 relative"> */}
-        <Navbar />
-        <FirstSection />
-      {/* </div> */}
-
-     
+      <Navbar />
+      <FirstSection />
       <div className="w-3/5 mx-auto">
         <EventSchedule />
       </div>
-       {/* <div className="w-4/5 mx-auto"> */}
-       <Countdown targetDate={placeholderTargetDate.toISOString()} />
-      {/* </div> */}
+      <Countdown targetDate={placeholderTargetDate.toISOString()} />
       <Pricing />
       <EventLocation />
       <Footer />

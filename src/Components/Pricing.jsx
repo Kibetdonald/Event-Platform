@@ -5,11 +5,11 @@ const Pricing = () => (
     <div className="pricingContainer">
       <h3 className="pricingBanner">Find the package thats right for you</h3>
       <p className="pricingBannerDescription">
-        We have the lowest Subscription prices with excelent features
+        We have a range of packages with excelent benefits
       </p>
       <div className="pricing-table">
         <div className="pricing-card">
-          <h3 className="pricing-card-header">Standard</h3>
+          <h3 className="pricing-card-header">Platinum</h3>
           <div className="price">
             <sup>Ksh.</sup>2,000
           </div>
@@ -29,7 +29,7 @@ const Pricing = () => (
         </div>
 
         <div className="pricing-card">
-          <h3 className="pricing-card-header">Premium</h3>
+          <h3 className="pricing-card-header">Gold</h3>
           <div className="price">
             <sup>Ksh.</sup>5,000<span></span>
           </div>
@@ -49,7 +49,7 @@ const Pricing = () => (
         </div>
 
         <div className="pricing-card">
-          <h3 className="pricing-card-header">Enterprise</h3>
+          <h3 className="pricing-card-header">Silver</h3>
           <div className="price">
             <sup>Ksh.</sup>20,000<span></span>
           </div>
