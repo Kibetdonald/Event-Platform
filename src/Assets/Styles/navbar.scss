@@ -89,7 +89,14 @@
   border-radius: 4px; 
   padding: 12px 20px;
 }
- 
+  
+ul.list-disc li::marker {
+  content: "■";
+  color: #209CEE;  
+  font-size:0.8em;  
+  margin-right: 10em; 
+}
+
 
 // .FirstSection {
 //   width: 80%;

@@ -110,13 +110,13 @@ const EventSchedule = () => {
                       key={subIndex}
                       className="border border-gray-300 rounded-lg p-4 my-2 hover:shadow-md transition duration-300 ease-in-out mx-2 flex items-center"
                     >
-                      <div>
+                      {/* <div>
                         <img
                           src={subEvent.profilePicture}
                           alt={subEvent.responsiblePerson}
                           className="w-16 h-16 rounded-full mr-2"
                         />
-                      </div>
+                      </div> */}
                       <div>
                         <div>{subEvent.title}</div>
                         <div>Responsible: {subEvent.responsiblePerson}</div>
