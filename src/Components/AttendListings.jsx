@@ -14,7 +14,7 @@ export default function AttendListings() {
               Unite your siloed data, and access governed and secure first-,
               second-, and third-party data for previously unimagined insights.
             </li>
-            <li>&nbsp;
+             <li>&nbsp;
               Develop and run data applications, models, and pipelines where
               data lives.
             </li>
