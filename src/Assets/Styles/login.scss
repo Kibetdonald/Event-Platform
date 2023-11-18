@@ -1,5 +1,49 @@
 
 /* Styling for the login form */
+.your-component-container {
+  position: relative;
+}
+
+.wave-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px; /* Adjust the height of the waves as needed */
+  overflow: hidden;
+}
+
+.wave {
+  width: 20px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  animation: growWave 2s ease-in-out infinite;
+}
+
+/* Customize the animation for each wave */
+.wave-1 {
+  animation-delay: 0s;
+}
+
+.wave-2 {
+  animation-delay: 0.2s;
+}
+
+/* Add more wave styles for wave-3 to wave-10 with different animation delays */
+
+@keyframes growWave {
+  0% {
+    transform: scaleY(0);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
 
 .login-body {
     display: table;
