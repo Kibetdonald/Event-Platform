@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from "react";
 
-const Countdown = ({ targetDate }) => {
+const Countdown = () => {
+  const targetDate = new Date("2023-12-05T00:00:00");
+
   const calculateTimeLeft = () => {
-    const difference = +new Date(targetDate) - +new Date();
+    // Check if targetDate is not valid
+    if (!targetDate || isNaN(targetDate.getTime())) {
+      console.error("Invalid targetDate format");
+      return null;
+    }
+
+    const difference = targetDate - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -37,28 +45,28 @@ const Countdown = ({ targetDate }) => {
         <div className="flex">
         <div className="w-32 h-24 p-2 border border-gray-300 rounded shadow-lg m-1 flex items-center justify-center">
             <h3 className="text-3xl">
-              {timeLeft.days.toString().padStart(2, "0")}
+              {timeLeft.days}
               <br/>
               <span className="text-sm">Days</span>
             </h3>
           </div>
           <div className="w-32 h-24 p-2 border border-gray-300 rounded shadow-lg m-1 flex items-center justify-center">
             <h3 className="text-3xl">
-              {timeLeft.hours.toString().padStart(2, "0")}
+              {timeLeft.hours}
               <br/>
               <span className="text-sm">Hrs</span>
             </h3>
           </div>
           <div className="w-32 h-24 p-2 border border-gray-300 rounded shadow-lg m-1 flex items-center justify-center">
             <h3 className="text-3xl">
-              {timeLeft.minutes.toString().padStart(2, "0")}
+              {timeLeft.minutes}
               <br/>
               <span className="text-sm">Min</span>
             </h3>
           </div>
           <div className="w-32 h-24 p-2 border border-gray-300 rounded shadow-lg m-1 flex items-center justify-center">
             <h3 className="text-3xl">
-              {timeLeft.seconds.toString().padStart(2, "0")}
+              {timeLeft.seconds}
               <br/>
               <span className="text-sm">Sec</span>
             </h3>

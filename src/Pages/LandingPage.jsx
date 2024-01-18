@@ -18,7 +18,7 @@ export default function LandingPage() {
         <EventSchedule />
         <AttendListings/>
       </div>
-      <Countdown targetDate={placeholderTargetDate.toISOString()} />
+      <Countdown/>
       <Pricing />
       <EventLocation />
       <Footer />
